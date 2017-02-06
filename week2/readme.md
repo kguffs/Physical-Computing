@@ -3,9 +3,9 @@ I created a stoplight this week! The video of it in action and the picture of my
 int GREEN = 2;
 int YELLOW = 3;
 int RED = 4;
-int DELAY_GREEN = 500;
-int DELAY_YELLOW = 500;
-int DELAY_RED = 500 ;
+int DELAY_GREEN = 1000;
+int DELAY_YELLOW = 1000;
+int DELAY_RED = 1000;
 
 void setup()
 {
