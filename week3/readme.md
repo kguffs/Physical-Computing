@@ -1,0 +1,1 @@
+I created a polling system. Let's say we're rating a song a similar way you might on Pandora. They use thumbs up and thumbs down. Here I've used pink heart for love and black upside down heart (spade?) for hate. Note: the song in the background "21 of May" by Nickel Creek is really good and kind of hilarious, so pink hearts from me all the way.
