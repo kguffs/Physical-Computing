@@ -1,0 +1,1 @@
+I did both the Love-O-Meter and the Lava Lamp. The Love-O-Meter was definitely more difficult to get to work and the video I have here is just the sensor reacting to the temperature of my own hand, but my roommate and her boyfriend held hands and that worked...barely kind of. There was light, it counts!
