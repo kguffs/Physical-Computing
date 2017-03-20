@@ -1,1 +1,0 @@
-My midterm idea is to have a device that monitors pitch - how high, middle, and low. I want to track how much of each category is used in composition so to better understand what I should work on in the practice room and it will also indicate how on or off the pitch I happen to be.
