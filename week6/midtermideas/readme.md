@@ -1,1 +1,1 @@
-Will fill out <3
+I've modified my midterm idea to simply indicate pitch category with an LED. Ex. High green, middle yellow, low red. If I am not right on the pitches within that category, the light will dim, if I am in tune, the light with brighten. There is also the idea of air flow. I could incorporate a time requirement on each pitch of my composition so while playing I know how long to hold the note. This will be indicated the same way - with a dimming light.
