@@ -49,3 +49,7 @@ void loop() {
     digitalWrite(ledgreen, HIGH);
   }
 }
+
+I had two issues to troubleshoot - because of my ranges, the low range wouldn't engage and the mid range (yellow) LED would not turn off. I fixed that by expanded and redefining my pitch ranges. My other issue was then that I'd sing in any range and no matter which light came on, the low range (red) would stay on and never turn off. I implemented an off switch in the code in the same format as the other "if" statements.
+
+One of the things I liked about my second problem was that when a pitch was certainly mid-range, as long as it was held, no other lights would come on. It seems when I extended my ranges I also gave my project a more fluid response.
