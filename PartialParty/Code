@@ -1,0 +1,74 @@
+#define ledred 7
+#define ledyellow 8
+#define ledgreen 13
+
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+const int ampDetect = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledred, OUTPUT);
+  pinMode(ledyellow, OUTPUT);
+  pinMode(ledgreen, OUTPUT);
+
+  lcd.begin(16, 2);
+  pinMode(ampDetect, INPUT);
+  lcd.print("Play a nice");
+  lcd.setCursor(0, 1);
+  lcd.print("mezzo forte!");
+
+}
+
+void loop() {
+  int pitchRead = analogRead(A0);
+  Serial.print("pitchRead: ");
+  Serial.println(pitchRead);
+
+  if (pitchRead > 265 && pitchRead < 270) {
+    digitalWrite(ledred, LOW);
+    digitalWrite(ledyellow, LOW);
+    digitalWrite(ledgreen, LOW);
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("Reset &");
+    lcd.setCursor(0, 1);
+    lcd.print("try again!");
+
+   }
+  
+
+  if (pitchRead > 270 && pitchRead < 290) {
+    digitalWrite(ledred, HIGH);
+    digitalWrite(ledyellow, LOW);
+    digitalWrite(ledgreen, LOW);
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("More air!");
+    
+   
+  }
+
+  if (pitchRead > 290 && pitchRead < 310) {
+    digitalWrite(ledred, LOW);
+    digitalWrite(ledyellow, HIGH);
+    digitalWrite(ledgreen, LOW);
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("You're almost th");
+    lcd.setCursor(0, 1);
+    lcd.print("ere! Keep going!");
+
+  }
+
+  if (pitchRead > 310) {
+    digitalWrite(ledred, LOW);
+    digitalWrite(ledyellow, LOW);
+    digitalWrite(ledgreen, HIGH);
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("Perfecto!");
+    lcd.setCursor(0, 1);
+    lcd.print("You rock!");
+  }
+} 
